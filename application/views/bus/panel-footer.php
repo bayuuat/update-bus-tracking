@@ -30,10 +30,6 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 
-<script src="<?= base_url(); ?>assets/js/leaflet/leaflet-src.js"></script>
-<script src="<?= base_url(); ?>assets/js/dist/leaflet-realtime.js"></script>
-<script src="<?= base_url(); ?>assets/js/dist/leaflet.rotatedMarker.js"></script>
-
 <script src="<?= base_url(); ?>assets/js/script_dashboard.js?=3"></script>
 
 <script src="<?= base_url(); ?>assets/js/sb-admin-2.min.js?"></script>

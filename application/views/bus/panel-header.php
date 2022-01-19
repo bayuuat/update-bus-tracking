@@ -28,22 +28,6 @@
     <link rel="icon" href="<?= base_url() ?>/assets/img/logo-its.png" type="image/gif">
 
     <title><?= $title ?></title>
-
-    <style>
-        #map {
-            height: 96.5%;
-        }
-
-        #mapid {
-            height: 96.5%;
-        }
-
-        .custom .leaflet-popup-content-wrapper,
-        .custom .leaflet-popup-tip {
-            text-align: center;
-            background: rgba(255, 255, 255, 0);
-        }
-    </style>
 </head>
 
 <body>

@@ -176,44 +176,44 @@
                             </table>
                         </div>
                     </div>
-
                 </div>
-                <div class="">
-                    <table class="table table-borderless table-kondisi">
-                        <tbody>
-                            <tr>
-                                <td style="width: 13%"><i class="fas fa-star"></i></td>
-                                <td class="text-kondisi">
-                                    <h6>Vehicle Status</h6>
-                                    <p>ini isinya</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-bell"></i></td>
-                                <td class="text-kondisi">
-                                    <h6>Vehicle Health</h6>
-                                    <p>ini isinya</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-tint"></i></td>
-                                <td class="text-kondisi">
-                                    <h6>Sensor Health</h6>
-                                    <p>ini isinya</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5>Message</h5>
+                <div class="status-data">
+                    <div class="card shadow">
+                        <div class="card-body status">
+                            <div class="row">
+                                <div class="col-2"><i class="fas fa-star d-flex justify-content-center"></i></div>
+                                <div class="col">
+                                    <div class="text-kondisi">
+                                        <h6>Vehicle Status</h6>
+                                        <p>ini isinya</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2"><i class="fas fa-bell d-flex justify-content-center"></i></div>
+                                <div class="col">
+                                    <div class="text-kondisi">
+                                        <h6>Vehicle Health</h6>
+                                        <p>ini isinya</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2"><i class="fas fa-tint d-flex justify-content-center"></i></div>
+                                <div class="col">
+                                    <div class="text-kondisi">
+                                        <h6>Sensor Health</h6>
+                                        <p>ini isinya</p>
+                                        </d>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
-
-
-</div>
-<!-- /.container-fluid -->
+    <!-- /.container-fluid -->

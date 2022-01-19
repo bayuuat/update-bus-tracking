@@ -102,14 +102,14 @@ setInterval(function () {
 			$("#voltage").html(`${data.battery}%`);
 			$("#soc").html(`${data.battery}%`);
 			if (data.battery >= 0 && data.battery <= 10) {
-				$("#battery").addClass("fa-battery-empty");
+				$("#battery").addClass("fa-battery-empty text-danger");
 				$("#battery").removeClass("fa-battery-quarter");
 				$("#battery").removeClass("fa-battery-half");
 				$("#battery").removeClass("fa-battery-three-quarters");
 				$("#battery").removeClass("fa-battery-full");
 			} else if (data.battery > 10 && data.battery <= 40) {
 				$("#battery").removeClass("fa-battery-empty");
-				$("#battery").addClass("fa-battery-quarter");
+				$("#battery").addClass("fa-battery-quarter text-warning");
 				$("#battery").removeClass("fa-battery-half");
 				$("#battery").removeClass("fa-battery-three-quarters");
 				$("#battery").removeClass("fa-battery-full");
