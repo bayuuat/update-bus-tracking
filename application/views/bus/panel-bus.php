@@ -38,7 +38,8 @@
                     <table class="table table-striped">
                         <tbody>
                             <tr>
-                                <td class="tab-left" style="width: 20%"><i class="fas fa-circle" style="color: #d1d4e4;"></i></td>
+                                <td class="tab-left" style="width: 20%"><i class="fas fa-circle"
+                                        style="color: #d1d4e4;"></i></td>
                                 <td>
                                     <h6>Engine Load</h6>
                                 </td>
@@ -98,7 +99,8 @@
                     <h4>GPS</h4>
                     <table class="table table-striped">
                         <tr>
-                            <td class="tab-left" style="width: 20%"><i class="fas fa-circle" style="color: #d1d4e4;"></i></td>
+                            <td class="tab-left" style="width: 20%"><i class="fas fa-circle"
+                                    style="color: #d1d4e4;"></i></td>
                             <td>
                                 <h6>GPS Position</h6>
                             </td>
@@ -213,7 +215,5 @@
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- /.container-fluid -->
