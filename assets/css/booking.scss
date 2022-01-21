@@ -1,4 +1,111 @@
 .booking {
+	background: #fdfbfb;
+
+	.timeline {
+		p {
+			font-family: "Poppins", sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: 0;
+			padding-top: 15px;
+
+			color: #706f6f;
+		}
+		hr {
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+	}
+
+	.card-horizontal {
+		background: #ffffff;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		img {
+			width: 281.9px;
+			height: 250px;
+			border-radius: 10px;
+			object-fit: cover;
+		}
+		.card-body {
+			padding: 0 0 0 0;
+			.judul {
+				h3 {
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-weight: 800;
+					font-size: 24px;
+					margin: 0px;
+
+					color: #4e73df;
+				}
+				p {
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					margin-top: 5px;
+					margin-bottom: 0;
+
+					color: #858796;
+				}
+			}
+			.konten {
+				h5 {
+					font-family: "Roboto", sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+
+					color: #858796;
+				}
+				.konten-1 {
+					background: #e0f8ef;
+					border-radius: 10px;
+					padding: 10px;
+					margin-left: -8px;
+					margin-bottom: 15px;
+					h5 {
+						margin: 0;
+					}
+					p {
+						font-family: "Poppins", sans-serif;
+						font-style: normal;
+						font-weight: 300;
+						font-size: 18px;
+						margin: 0;
+
+						color: #4b4f59;
+					}
+				}
+				.konten-2 {
+					p {
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 22px;
+
+						color: #6e7689;
+					}
+				}
+				.konten-3 {
+					p {
+						font-family: "Roboto", sans-serif;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 28px;
+
+						color: #1cc88a;
+					}
+				}
+			}
+		}
+	}
+}
+
+.booking-detail {
 	.card-horizontal {
 		// box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 20px;
@@ -12,7 +119,7 @@
 			padding: 0 0 0 0;
 			.judul {
 				h3 {
-					font-family: Roboto;
+					font-family: "Roboto", sans-serif;
 					font-style: normal;
 					font-weight: 800;
 					font-size: 24px;
@@ -21,7 +128,7 @@
 					color: #4e73df;
 				}
 				p {
-					font-family: Roboto;
+					font-family: "Roboto", sans-serif;
 					font-style: normal;
 					font-weight: normal;
 					font-size: 16px;
@@ -33,7 +140,7 @@
 			}
 			.konten {
 				h5 {
-					font-family: Roboto;
+					font-family: "Roboto", sans-serif;
 					font-style: normal;
 					font-weight: normal;
 					font-size: 18px;
@@ -41,18 +148,27 @@
 					color: #858796;
 				}
 				.konten-1 {
+					background: #e0f8ef;
+					border-radius: 10px;
+					padding: 10px;
+					margin-left: -8px;
+					margin-bottom: 15px;
+					h5 {
+						margin: 0;
+					}
 					p {
-						font-family: Poppins;
+						font-family: "Poppins", sans-serif;
 						font-style: normal;
 						font-weight: 300;
 						font-size: 18px;
+						margin: 0;
 
 						color: #4b4f59;
 					}
 				}
 				.konten-2 {
 					p {
-						font-family: Roboto;
+						font-family: "Roboto", sans-serif;
 						font-style: normal;
 						font-weight: 500;
 						font-size: 22px;
@@ -62,7 +178,7 @@
 				}
 				.konten-3 {
 					p {
-						font-family: Roboto;
+						font-family: "Roboto", sans-serif;
 						font-style: normal;
 						font-weight: 500;
 						font-size: 28px;
@@ -75,7 +191,7 @@
 	}
 	.main-title {
 		h2 {
-			font-family: Roboto;
+			font-family: "Roboto", sans-serif;
 			font-style: normal;
 			font-weight: bold;
 			font-size: 36px;
@@ -95,7 +211,7 @@
 	}
 	.timeline {
 		p {
-			font-family: Poppins;
+			font-family: "Poppins", sans-serif;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 20px;
@@ -112,7 +228,7 @@
 	}
 
 	.books-detail {
-		height: 338px;
+		// height: 338px;
 		padding: 15px;
 		margin-top: 15px;
 		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
@@ -120,17 +236,39 @@
 		.tombol-buatan {
 			background: #f1f6ff;
 			border-radius: 50px;
-			padding: 10px;
-			.book-now {
-				font-family: Poppins;
-				font-style: normal;
-				font-weight: 800;
-				font-size: 18px;
-				text-align: center;
-				padding: 15px;
+			padding: 20px;
 
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+
+			color: #6e7689;
+			i {
 				color: #4985f8;
+				font-size: 20px;
 			}
+			p {
+				margin-bottom: 0;
+				margin-left: 10px;
+			}
+			.faded-text {
+				color: #bcbcbc;
+			}
+		}
+		.btn-book {
+			background-color: #f1f6ff;
+			border-radius: 50px;
+			min-width: 205px;
+
+			font-family: "Poppins", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			padding: 15px;
+
+			color: #4985f8;
 		}
 	}
 }
