@@ -1,50 +1,98 @@
 <div class="booking container-fluid h-100">
     <div class="row h-100">
-        <div class="col pl-5">
-
-        </div>
-        <div class="timeline card col-3 mx-3 mt-3">
-            <div class="justify-content">
-                <p>Your Booked Station</p>
-                <hr>
+        <div class="col pl-5 d-flex">
+            <div class="timeline card col-3 mx-3 mt-3">
+                <div class="justify-content">
+                    <p>Your Booked Station</p>
+                    <hr>
+                </div>
             </div>
-        </div>
-        <div class="col container-fluid">
-            <div class="row">
-                <div class="col mt-3">
-                    <div class="card">
-                        <!-- <div class="card-horizontal">
-                            <div class="img-square-wrapper">
-                                <img class=""
-                                    src="https://asset.kompas.com/crops/gaH-dtbdYFUEn76HSO-jOXp0MKU=/0x0:1280x853/750x500/data/photo/2021/08/10/61120c444598c.jpeg"
-                                    alt="Card image cap">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">FTEIC Charging Station</h4>
-                                <p class="card-text">2 KM AWAY</p>
-                                <p class="card-text">Available</p>
-                                <p class="card-text">Ready at 14:00</p>
-                            </div>
-                        </div> -->
-                        <div class="card-horizontal">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="img-square-wrapper my-auto">
-                                        <img class=""
-                                            src="https://asset.kompas.com/crops/gaH-dtbdYFUEn76HSO-jOXp0MKU=/0x0:1280x853/750x500/data/photo/2021/08/10/61120c444598c.jpeg"
-                                            alt="Card image cap">
+            <div class="col container-fluid">
+                <div class="row">
+                    <div class="col mt-3">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="row">
+                                    <div class="col-auto m-3">
+                                        <div class="img-square-wrapper my-auto">
+                                            <img class=""
+                                                src="https://asset.kompas.com/crops/gaH-dtbdYFUEn76HSO-jOXp0MKU=/0x0:1280x853/750x500/data/photo/2021/08/10/61120c444598c.jpeg"
+                                                alt="Card image cap">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body d-flex align-items-start flex-column h-100 py-3">
+                                            <div class="judul">
+                                                <h3>FTEIC Charging Station</h3>
+                                                <p class="m-0">2 KM AWAY</p>
+                                            </div>
+                                            <div class="konten mt-auto">
+                                                <div class="konten-3">
+                                                    <p class="m-0">Available</p>
+                                                    <h5 class="m-0">Ready at 14.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card-body d-flex align-items-start flex-column h-100">
-                                        <div class="judul">
-                                            <h3>FTEIC Charging Station</h3>
-                                            <p>2 KM AWAY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="row">
+                                    <div class="col-auto m-3">
+                                        <div class="img-square-wrapper my-auto">
+                                            <img class=""
+                                                src="https://asset.kompas.com/crops/gaH-dtbdYFUEn76HSO-jOXp0MKU=/0x0:1280x853/750x500/data/photo/2021/08/10/61120c444598c.jpeg"
+                                                alt="Card image cap">
                                         </div>
-                                        <div class="konten mt-auto">
-                                            <div class="konten-3">
-                                                <p class="status-station">Available</p>
-                                                <h5 class="">Status</h5>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body d-flex align-items-start flex-column h-100 py-3">
+                                            <div class="judul">
+                                                <h3>FTEIC Charging Station</h3>
+                                                <p class="m-0">2 KM AWAY</p>
+                                            </div>
+                                            <div class="konten mt-auto">
+                                                <div class="konten-3">
+                                                    <p class="m-0">Available</p>
+                                                    <h5 class="m-0">Ready at 14.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="row">
+                                    <div class="col-auto m-3">
+                                        <div class="img-square-wrapper my-auto">
+                                            <img class=""
+                                                src="https://asset.kompas.com/crops/gaH-dtbdYFUEn76HSO-jOXp0MKU=/0x0:1280x853/750x500/data/photo/2021/08/10/61120c444598c.jpeg"
+                                                alt="Card image cap">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body d-flex align-items-start flex-column h-100 py-3">
+                                            <div class="judul">
+                                                <h3>FTEIC Charging Station</h3>
+                                                <p class="m-0">2 KM AWAY</p>
+                                            </div>
+                                            <div class="konten mt-auto">
+                                                <div class="konten-3">
+                                                    <p class="m-0">Available</p>
+                                                    <h5 class="m-0">Ready at 14.00</h5>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -55,6 +103,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-3 pt-5 side-data">
             <div class="d-flex flex-column justify-content-around" style="height: 90%">
                 <div class="card shadow">
