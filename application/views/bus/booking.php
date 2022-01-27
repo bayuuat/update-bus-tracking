@@ -12,29 +12,31 @@
                 <div class="row">
                     <div class="col mt-3">
                         <div class="card">
-                            <div class="card-horizontal">
-                                <div class="row">
-                                    <div class="col-auto m-3">
-                                        <div class="img-square-wrapper my-auto">
-                                            <img class="" src="<?= $list_casan['foto'] ?>" alt="Card image cap">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card-body d-flex align-items-start flex-column h-100 py-3">
-                                            <div class="judul">
-                                                <h3><?= $list_casan['nama'] ?></h3>
-                                                <p class="m-0">2 KM AWAY</p>
+                            <a href="<?= base_url('bookings/detail/') . $list_casan['id']; ?>">
+                                <div class="card-horizontal">
+                                    <div class="row">
+                                        <div class="col-auto m-3">
+                                            <div class="img-square-wrapper my-auto">
+                                                <img class="" src="<?= $list_casan['foto'] ?>" alt="Card image cap">
                                             </div>
-                                            <div class="konten mt-auto">
-                                                <div class="konten-3">
-                                                    <p class="m-0"><?= $list_casan['status'] ?></p>
-                                                    <h5 class="m-0">Ready at 14.00</h5>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body d-flex align-items-start flex-column h-100 py-3">
+                                                <div class="judul">
+                                                    <h3><?= $list_casan['nama'] ?></h3>
+                                                    <p class="m-0">2 KM AWAY</p>
+                                                </div>
+                                                <div class="konten mt-auto">
+                                                    <div class="konten-3">
+                                                        <p class="m-0"><?= $list_casan['status'] ?></p>
+                                                        <h5 class="m-0">Ready at 14.00</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
