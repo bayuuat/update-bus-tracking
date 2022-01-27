@@ -12,7 +12,9 @@
             </div>
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <?php foreach ($list_buses as $l) : ?>
-                    <a class="nav-link getId" id="'v-pills-tab" data-id="<?= $l['id'] ?>" data-toggle="pill" href="<?= '#v-pills-' . $l['id'] ?>" role="tab" aria-controls="<?= 'v-pills-' . $l['id'] ?>" aria-selected="true"><?= $l['name'] ?></a>
+                <a class="nav-link getId" id="'v-pills-tab" data-id="<?= $l['id'] ?>" data-toggle="pill"
+                    href="<?= '#v-pills-' . $l['id'] ?>" role="tab" aria-controls="<?= 'v-pills-' . $l['id'] ?>"
+                    aria-selected="true"><?= $l['name'] ?></a>
                 <?php endforeach; ?>
             </div>
         </div>

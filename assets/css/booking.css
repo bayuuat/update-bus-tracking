@@ -258,6 +258,17 @@
   color: #bcbcbc;
 }
 
+.booking-detail .books-detail .tombol-buatan .garis {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.booking-detail .books-detail .tombol-buatan .garis p {
+  margin: 0;
+  margin-right: 75px;
+}
+
 .booking-detail .books-detail .btn-book {
   background-color: #f1f6ff;
   border-radius: 50px;

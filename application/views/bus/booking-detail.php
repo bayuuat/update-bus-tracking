@@ -70,7 +70,7 @@
                                     <i class="fas fa-charging-station my-auto"></i>
                                     <p>05:00 AM</p>
                                 </div>
-                                <div class="col d-flex">
+                                <div class="col d-flex garis">
                                     <p>&#124;</p>
                                 </div>
                                 <div class="col d-flex">

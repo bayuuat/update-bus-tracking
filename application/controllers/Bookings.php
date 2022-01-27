@@ -18,6 +18,7 @@ class Bookings extends CI_Controller
         $data['name'] = $this->session->userdata('name');
         $data['title'] = 'Booking';
         $data['role_id'] = $this->session->userdata('role_id');
+        $data['list_charges'] = $this->db->get('tempat_charge')->result_array();
         $this->load->view('templates/header', $data);
         $this->load->view('bus/booking', $data);
     }
