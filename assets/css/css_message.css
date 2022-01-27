@@ -1,8 +1,7 @@
-
 /* Chat containers */
 .container {
 	word-wrap: break-word;
-	width:auto;
+	width: auto;
 	text-align: left;
 	border: 2px solid #dedede;
 	background-color: #f1f1f1;
@@ -17,9 +16,9 @@
 
 /* Darker chat container */
 .darker {
-	border-color: #1176AE;
-	background-color: #1176AE;
-	color:white;
+	border-color: #1176ae;
+	background-color: #1176ae;
+	color: white;
 	text-align: right;
 	border-top-right-radius: 0px;
 	border-top-left-radius: 30px;
@@ -37,7 +36,7 @@
 /* Style time text */
 .time-right {
 	float: right;
-	color:white;
+	color: white;
 }
 
 /* Style time text */
@@ -48,8 +47,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-	width: 20px;
-	height: 20px;
+	width: 10px;
+	height: 10px;
 }
 
 /* Track */
