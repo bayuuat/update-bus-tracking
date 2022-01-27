@@ -9,14 +9,19 @@
     <!-- Bootstrap CSS -->
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>assets/css/sb-admin-2.min.css" type="text/css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/css/sb-admin-2.css" type="text/css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/css/css.css?v=2" type="text/css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/css/css_message.css?v=2" type="text/css" rel="stylesheet">
-    <link href="<?= base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" type="text/css"
+        rel="stylesheet">
     <link href="<?= base_url(); ?>assets/css/panelbus.css" type="text/css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/css/booking.css" type="text/css" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/leaflet/leaflet.css'); ?>" />
@@ -31,25 +36,26 @@
     <title><?= $title ?></title>
 
     <style>
-        #map {
-            height: 96.5%;
-        }
+    #map {
+        height: 96.5%;
+    }
 
-        #mapid {
-            height: 96.5%;
-        }
+    #mapid {
+        height: 96.5%;
+    }
 
-        .custom .leaflet-popup-content-wrapper,
-        .custom .leaflet-popup-tip {
-            text-align: center;
-            background: rgba(255, 255, 255, 0);
-        }
+    .custom .leaflet-popup-content-wrapper,
+    .custom .leaflet-popup-tip {
+        text-align: center;
+        background: rgba(255, 255, 255, 0);
+    }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg border-bottom px-5" style="background-color: #1176AE;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,26 +64,33 @@
                     <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('home') ?>">Dashboard</a></b>
                 </li>
                 <li class="nav-item">
-                    <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('home/historyTracking') ?>">History</a></b>
+                    <b><a class="nav-link text-white py-3 px-3"
+                            href="<?= base_url('home/historyTracking') ?>">History</a></b>
                 </li>
                 <li class="nav-item">
                     <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('home/logPage') ?>">Data Log</a></b>
                 </li>
                 <li class="nav-item">
-                    <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('home/messagePage') ?>">Send Message</a></b>
+                    <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('home/messagePage') ?>">Send
+                            Message</a></b>
                 </li>
                 <?php if ($role_id == 1) { ?>
-                    <li class="nav-item">
-                        <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('panelbus/databus') ?>">Panel</a></b>
-                    </li>
+                <li class="nav-item">
+                    <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('panelbus/databus') ?>">Panel</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link text-white py-3 px-3" href="<?= base_url('bookings') ?>">Booking</a></b>
+                </li>
                 <?php } ?>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <b><a class="nav-link mr-auto text-white py-3 px-3" href="<?= base_url('admin') ?>"><?= $name ?></a></b>
+                    <b><a class="nav-link mr-auto text-white py-3 px-3"
+                            href="<?= base_url('admin') ?>"><?= $name ?></a></b>
                 </li>
                 <li class="nav-item">
-                    <b><a class="nav-link mr-auto text-white py-3 px-3" href="" data-toggle="modal" data-target="#logoutModal">Logout</a></b>
+                    <b><a class="nav-link mr-auto text-white py-3 px-3" href="" data-toggle="modal"
+                            data-target="#logoutModal">Logout</a></b>
                 </li>
             </ul>
         </div>
