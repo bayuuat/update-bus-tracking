@@ -18,17 +18,21 @@ class Bookings extends CI_Controller
         $data['name'] = $this->session->userdata('name');
         $data['title'] = 'Booking';
         $data['role_id'] = $this->session->userdata('role_id');
-        $data['list_charges'] = $this->db->get('tempat_charge')->result_array();
+        $this->load->model('M_booking');
+        $data['list_charges'] = $this->M_booking->get_data();
         $this->load->view('templates/header', $data);
         $this->load->view('bus/booking', $data);
     }
 
-    public function detail()
+    public function detail($id)
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['name'] = $this->session->userdata('name');
         $data['title'] = 'Booking';
         $data['role_id'] = $this->session->userdata('role_id');
+        $this->load->model('M_booking');
+        $detail = $this->M_booking->detail_data($id);
+        $data['detail'] = $detail;
         $this->load->view('templates/header', $data);
         $this->load->view('bus/booking-detail', $data);
     }

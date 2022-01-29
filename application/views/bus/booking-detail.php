@@ -19,15 +19,13 @@
                         <div class="row">
                             <div class="col-auto">
                                 <div class="img-square-wrapper my-auto">
-                                    <img class=""
-                                        src="https://asset.kompas.com/crops/gaH-dtbdYFUEn76HSO-jOXp0MKU=/0x0:1280x853/750x500/data/photo/2021/08/10/61120c444598c.jpeg"
-                                        alt="Card image cap">
+                                    <img class="" src="<?= $detail->foto ?>" alt="Card image cap">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card-body d-flex align-items-start flex-column h-100">
                                     <div class="judul">
-                                        <h3>FTEIC Charging Station</h3>
+                                        <h3><?= $detail->nama ?></h3>
                                         <p>2 KM AWAY</p>
                                     </div>
                                     <div class="konten mt-auto">
@@ -37,11 +35,11 @@
                                         </div>
                                         <div class="konten-2">
                                             <h5 class="">Location</h5>
-                                            <p class="lokasi">Parkiran Dosen Gedung AJ FTEIC</p>
+                                            <p class="lokasi"><?= $detail->lokasi ?></p>
                                         </div>
                                         <div class="konten-3">
                                             <h5 class="">Status</h5>
-                                            <p class="status-station">Available</p>
+                                            <p class="status-station"><?= $detail->status ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +54,7 @@
                                     <p>Charging Station</p>
                                 </div>
                                 <div class="col-7 d-flex faded-text">
-                                    <p>Parkiran Dosen Gedung AJ Elektro</p>
+                                    <p><?= $detail->lokasi ?></p>
                                 </div>
                             </div>
                             <div class="tombol-buatan row my-3">
