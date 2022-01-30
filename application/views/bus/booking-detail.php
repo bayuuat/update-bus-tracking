@@ -62,12 +62,12 @@
                         <div class="books-detail row my-4">
                             <div class="col-9">
                                 <div class="tombol-buatan row my-3">
-                                    <div class="col-5 d-flex my-auto">
+                                    <div class="col-6 d-flex my-auto">
                                         <i class="fas fa-charging-station my-auto"></i>
                                         <p>Charging Station</p>
                                     </div>
-                                    <div class="col-7 d-flex faded-text">
-                                        <p><?= $detail->lokasi ?></p>
+                                    <div class="col-6 d-flex faded-text">
+                                        <p class="text-truncate"><?= $detail->lokasi ?></p>
                                     </div>
                                 </div>
                                 <div class="tombol-buatan row my-3">
@@ -76,17 +76,17 @@
                                         <input type="date" class="datepicker-input">
                                     </div>
                                 </div>
-                                <div class="tombol-buatan row my-3">
+                                <div class="tombol-buatan row my-3 py-2">
                                     <div class="col d-flex">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input type="time" value="13:30" />
+                                        <input class="my-auto" type="time" value="13:30" />
                                     </div>
-                                    <div class="col-2 d-flex garis p-0">
+                                    <div class="my-auto col-2 d-flex garis p-0">
                                         <p>&#124;</p>
                                     </div>
                                     <div class="col d-flex justify-content-end">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input type="time" value="13:30" />
+                                        <input class="my-auto" type="time" value="13:30" />
                                     </div>
                                 </div>
                             </div>

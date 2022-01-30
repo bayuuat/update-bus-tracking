@@ -115,6 +115,14 @@
 }
 
 .booking-detail {
+	.cut-text {
+		display: block;
+		max-width: 98%;
+		white-space: nowrap;
+		overflow: hidden !important;
+		text-overflow: ellipsis;
+	}
+
 	.card-horizontal {
 		// box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 20px;
@@ -257,7 +265,7 @@
 			font-family: Poppins;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 12px;
+			font-size: 16px;
 
 			color: #6e7689;
 			i {
@@ -274,8 +282,10 @@
 			.garis {
 				justify-content: center;
 				p {
-					margin: 20px 0 0 0;
+					font-size: 24px;
+					font-weight: 200;
 					vertical-align: middle;
+					margin-left: 0;
 				}
 			}
 		}
@@ -334,7 +344,7 @@
 		font-family: "Poppins", sans-serif;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 12px;
+		font-size: 16px;
 		text-transform: uppercase;
 		background-color: #f1f6ff;
 		outline: none;
@@ -354,20 +364,24 @@
 		font-family: "Poppins", sans-serif;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 12px;
+		font-size: 16px;
 		width: 120px;
+		height: 24px;
+
+		vertical-align: middle;
 	}
 
 	/* Wrapper around the hour, minute, second, and am/pm fields as well as 
 	  the up and down buttons and the 'X' button */
 	input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+		height: 24px;
 		display: flex;
 	}
 
 	/* The space between the fields - between hour and minute, the minute and 
 	  second, second and am/pm */
 	input[type="time"]::-webkit-datetime-edit-text {
-		padding: 19px 4px;
+		padding: 0 4px;
 	}
 
 	/* The naming convention for the hour, minute, second, and am/pm field is
@@ -377,14 +391,14 @@
 	input[type="time"]::-webkit-datetime-edit-hour-field {
 		background-color: #f1f6ff;
 		border-radius: 15%;
-		padding: 19px 13px;
+		padding: 0 13px;
 	}
 
 	/* Minute */
 	input[type="time"]::-webkit-datetime-edit-minute-field {
 		background-color: #f1f6ff;
 		border-radius: 15%;
-		padding: 19px 13px;
+		padding: 0 13px;
 	}
 
 	/* AM/PM */
