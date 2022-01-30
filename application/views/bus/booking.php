@@ -23,12 +23,10 @@
                                     <p class="m-0">2 KM AWAY</p>
                                 </div>
                                 <div class="konten mt-auto">
-                                    <div class="konten-3">
-                                        <p class="m-0" id="<?= 'WarnaStatus' . $list_casan['id']; ?>">
-                                            <?=$list_casan['status']?>
-                                        </p>
-                                        <h5 class="m-0">Ready at 14.00</h5>
-                                    </div>
+                                    <p class="m-0" id="<?= 'WarnaStatus' . $list_casan['id']; ?>">
+                                        <?=$list_casan['status']?>
+                                    </p>
+                                    <h5 class="m-0">Ready at 14.00</h5>
                                 </div>
                             </div>
                         </div>
@@ -54,13 +52,13 @@
                 <div class="card shadow">
                     <!-- Card Body -->
                     <div class="card-body">
-                        <div class="mr-2 text-center">
+                        <div class="mr-2 text-center gambar-baterai">
                             <i id="battery" class="fas fa-battery-full text-success ikon-baterai"></i>
                             <h6 id="batteryState">100%</h6>
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="status-baterai">
                     <h5>Battery Status</h5>
                     <div class="card shadow">
                         <div class="card-body bat-kon">

@@ -1,9 +1,9 @@
 <div class="booking-detail container-fluid">
     <div class="row h-100">
-        <div class="col pl-5">
-            <div class="main-title row my-3 ml-3">
+        <div class="col pl-4 pr-0">
+            <div class="main-title row my-3 ml-2">
                 <button class="btn rounded-button" type="submit">
-                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-left panah" aria-hidden="true"></i>
                 </button>
                 <h2>Charging Station Bookings</h2>
             </div>
@@ -14,7 +14,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="main-content col px-5">
+                <div class="main-content col px-4">
                     <div class="card-horizontal">
                         <div class="row">
                             <div class="col-auto">
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card-body d-flex align-items-start flex-column h-100">
+                                <div class="card-body d-flex align-items-start flex-column h-100 pt-1 pb-0">
                                     <div class="judul">
                                         <h3><?= $detail->nama ?></h3>
                                         <p>2 KM AWAY</p>
@@ -81,10 +81,10 @@
                                         <i class="fas fa-charging-station my-auto"></i>
                                         <input type="time" value="13:30" />
                                     </div>
-                                    <div class="col-1 d-flex garis">
+                                    <div class="col-2 d-flex garis p-0">
                                         <p>&#124;</p>
                                     </div>
-                                    <div class="col d-flex">
+                                    <div class="col d-flex justify-content-end">
                                         <i class="fas fa-charging-station my-auto"></i>
                                         <input type="time" value="13:30" />
                                     </div>
@@ -103,18 +103,18 @@
                 </div>
             </div>
         </div>
-        <div class=" col-3 pt-5 side-data ml-3">
-            <div class="d-flex flex-column justify-content-around" style="height: 90%">
+        <div class="col-3 side-data ml-4">
+            <div class="d-flex flex-column justify-content-around" style="height: 100%">
                 <div class="card shadow">
                     <!-- Card Body -->
                     <div class="card-body">
-                        <div class="mr-2 text-center">
+                        <div class="mr-2 text-center gambar-baterai">
                             <i id="battery" class="fas fa-battery-full text-success ikon-baterai"></i>
                             <h6 id="batteryState">100%</h6>
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="status-baterai">
                     <h5>Battery Status</h5>
                     <div class="card shadow">
                         <div class="card-body bat-kon">
