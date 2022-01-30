@@ -39,52 +39,67 @@
                                         </div>
                                         <div class="konten-3">
                                             <h5 class="">Status</h5>
-                                            <p class="status-station"><?= $detail->status ?></p>
+                                            <p id="WarnaStatus" class="status-station"><?= $detail->status ?>
+                                            </p>
+                                            <script>
+                                            var status = "<?php echo $detail->status; ?>";
+                                            var element = document.getElementById("WarnaStatus");
+                                            if (status == 'Available') {
+                                                element.classList.add('text-success');
+                                            } else if (status == 'Occupied') {
+                                                element.classList.add('text-danger');
+                                            } else if (status == 'Unavailable') {
+                                                element.classList.add('text-secondary');
+                                            }
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="books-detail row my-4">
-                        <div class="col-9">
-                            <div class="tombol-buatan row my-3">
-                                <div class="col-5 d-flex my-auto">
-                                    <i class="fas fa-charging-station my-auto"></i>
-                                    <p>Charging Station</p>
+                    <form action="">
+                        <div class="books-detail row my-4">
+                            <div class="col-9">
+                                <div class="tombol-buatan row my-3">
+                                    <div class="col-5 d-flex my-auto">
+                                        <i class="fas fa-charging-station my-auto"></i>
+                                        <p>Charging Station</p>
+                                    </div>
+                                    <div class="col-7 d-flex faded-text">
+                                        <p><?= $detail->lokasi ?></p>
+                                    </div>
                                 </div>
-                                <div class="col-7 d-flex faded-text">
-                                    <p><?= $detail->lokasi ?></p>
+                                <div class="tombol-buatan row my-3">
+                                    <div class="col d-flex">
+                                        <i class="fas fa-charging-station my-auto"></i>
+                                        <input type="date" class="datepicker-input">
+                                    </div>
+                                </div>
+                                <div class="tombol-buatan row my-3">
+                                    <div class="col d-flex">
+                                        <i class="fas fa-charging-station my-auto"></i>
+                                        <input type="time" value="13:30" />
+                                    </div>
+                                    <div class="col-1 d-flex garis">
+                                        <p>&#124;</p>
+                                    </div>
+                                    <div class="col d-flex">
+                                        <i class="fas fa-charging-station my-auto"></i>
+                                        <input type="time" value="13:30" />
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tombol-buatan row my-3">
-                                <div class="col d-flex">
-                                    <i class="fas fa-charging-station my-auto"></i>
-                                    <p>Monday, 31 January 2022</p>
-                                </div>
-                            </div>
-                            <div class="tombol-buatan row my-3">
-                                <div class="col d-flex">
-                                    <i class="fas fa-charging-station my-auto"></i>
-                                    <p>05:00 AM</p>
-                                </div>
-                                <div class="col d-flex garis">
-                                    <p>&#124;</p>
-                                </div>
-                                <div class="col d-flex">
-                                    <i class="fas fa-charging-station my-auto"></i>
-                                    <p>06:00 AM</p>
+                            <div class="col-3 align-items-end d-flex">
+                                <div class="row my-3">
+                                    <button class="btn btn-book my-auto">
+                                        BOOK NOW
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 align-items-end d-flex">
-                            <div class="row my-3">
-                                <button class="btn btn-book my-auto">
-                                    BOOK NOW
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </div>

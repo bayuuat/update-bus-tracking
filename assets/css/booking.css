@@ -93,7 +93,7 @@
 .booking .card-horizontal .card-body .konten .konten-1 p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   color: #4b4f59;
 }
@@ -108,7 +108,20 @@
 .booking .card-horizontal .card-body .konten .konten-3 p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: #1cc88a;
+}
+
+.booking-detail {
+  /* Wrapper around the hour, minute, second, and am/pm fields as well as 
+	  the up and down buttons and the 'X' button */
+  /* The space between the fields - between hour and minute, the minute and 
+	  second, second and am/pm */
+  /* The naming convention for the hour, minute, second, and am/pm field is
+	  `-webkit-datetime-edit-{field}-field` */
+  /* Hour */
+  /* Minute */
+  /* AM/PM */
+  /* 'X' button for resetting/clearing time */
+  /* Up/Down arrows for incrementing/decrementing the value */
 }
 
 .booking-detail .card-horizontal {
@@ -116,8 +129,8 @@
 }
 
 .booking-detail .card-horizontal img {
-  width: 450px;
-  height: 422px;
+  width: 320px;
+  height: 300px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -170,7 +183,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   color: #4b4f59;
 }
@@ -280,5 +293,71 @@
   text-align: center;
   padding: 15px;
   color: #4985f8;
+}
+
+.booking-detail input[type="date"] {
+  height: 35px;
+  margin: 0 auto;
+  margin-left: 10px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #f1f6ff;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 3px;
+  color: #6e7689;
+}
+
+.booking-detail input[type="time"] {
+  border: none;
+  background-color: #f1f6ff;
+  border: 0;
+  color: #6e7689;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  width: 120px;
+}
+
+.booking-detail input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+  display: -webkit-box;
+  display: flex;
+}
+
+.booking-detail input[type="time"]::-webkit-datetime-edit-text {
+  padding: 19px 4px;
+}
+
+.booking-detail input[type="time"]::-webkit-datetime-edit-hour-field {
+  background-color: #f1f6ff;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+.booking-detail input[type="time"]::-webkit-datetime-edit-minute-field {
+  background-color: #f1f6ff;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+.booking-detail input[type="time"]::-webkit-datetime-edit-ampm-field {
+  background-color: #7155d3;
+  border-radius: 15%;
+  color: #fff;
+  padding: 19px 13px;
+}
+
+.booking-detail input[type="time"]::-webkit-clear-button {
+  display: none;
+}
+
+.booking-detail input[type="time"]::-webkit-inner-spin-button {
+  display: none;
 }
 /*# sourceMappingURL=booking.css.map */

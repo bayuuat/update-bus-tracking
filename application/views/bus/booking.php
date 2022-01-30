@@ -24,7 +24,9 @@
                                 </div>
                                 <div class="konten mt-auto">
                                     <div class="konten-3">
-                                        <p class="m-0"><?= $list_casan['status'] ?></p>
+                                        <p class="m-0" id="<?= 'WarnaStatus' . $list_casan['id']; ?>">
+                                            <?=$list_casan['status']?>
+                                        </p>
                                         <h5 class="m-0">Ready at 14.00</h5>
                                     </div>
                                 </div>
@@ -33,6 +35,18 @@
                     </div>
                 </div>
             </a>
+            <script>
+            var status = "<?php echo $list_casan['status'] ?>";
+            var element = document.getElementById(
+                "<?= 'WarnaStatus' . $list_casan['id']; ?>");
+            if (status == 'Available') {
+                element.classList.add('text-success');
+            } else if (status == 'Occupied') {
+                element.classList.add('text-danger');
+            } else if (status == 'Unavailable') {
+                element.classList.add('text-secondary');
+            }
+            </script>
             <?php endforeach; ?>
         </div>
         <div class="col-3 side-data" style="height:91vh;">
