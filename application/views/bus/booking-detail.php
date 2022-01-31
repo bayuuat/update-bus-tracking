@@ -2,9 +2,11 @@
     <div class="row h-100">
         <div class="col pl-4 pr-0">
             <div class="main-title row my-3 ml-2">
-                <button class="btn rounded-button" type="submit">
-                    <i class="fa fa-arrow-left panah" aria-hidden="true"></i>
-                </button>
+                <a href="<?= base_url('bookings/') ?>">
+                    <button class="btn rounded-button" type="submit">
+                        <i class="fa fa-arrow-left panah" aria-hidden="true"></i>
+                    </button>
+                </a>
                 <h2>Charging Station Bookings</h2>
             </div>
             <div class="row">
