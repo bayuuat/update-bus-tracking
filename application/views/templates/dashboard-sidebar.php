@@ -13,7 +13,20 @@
     <li class="nav-item active">
         <a class="nav-link" href="<?= base_url('admin'); ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
+            <span>Dashboard</span>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="<?= base_url('admin/buses'); ?>">
+            <i class="fa fa-bus" aria-hidden="true"></i>
+            <span>Buses</span>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="<?= base_url('admin/station'); ?>">
+            <i class="fas fa-charging-station"></i>
+            <span>Charging Station</span>
+        </a>
     </li>
 
     <!-- Divider -->
