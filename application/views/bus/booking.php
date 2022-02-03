@@ -6,14 +6,15 @@
                 <hr>
             </div>
         </div>
-        <div id="station-list" class="col px-4 pt-3" style="height: 91vh; overflow:auto">
+        <div id="station-list" class="col px-4 pt-3" style="height: 88vh; overflow:auto">
             <?php foreach ($list_charges as $list_casan) : ?>
             <a href="<?= base_url('bookings/detail/') . $list_casan['id']; ?>">
                 <div class="card-horizontal mb-4">
                     <div class="row">
                         <div class="col-auto">
                             <div class="img-square-wrapper my-auto">
-                                <img class="" src="<?= $list_casan['foto'] ?>" alt="Card image cap">
+                                <img class="" src="<?= base_url("assets/img/") . $list_casan['foto'] ?>"
+                                    alt="Card image cap">
                             </div>
                         </div>
                         <div class="col">
@@ -47,7 +48,7 @@
             </script>
             <?php endforeach; ?>
         </div>
-        <div class="col-3 side-data" style="height:91vh;">
+        <div class="col-3 side-data" style="height:88vh;">
             <div class="d-flex flex-column justify-content-around" style="height: 100%;">
                 <div class="card shadow">
                     <!-- Card Body -->

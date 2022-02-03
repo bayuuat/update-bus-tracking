@@ -21,7 +21,8 @@
                         <div class="row">
                             <div class="col-auto">
                                 <div class="img-square-wrapper my-auto">
-                                    <img class="" src="<?= $detail->foto ?>" alt="Card image cap">
+                                    <img class="" src="<?= base_url("assets/img/") . $detail->foto ?>"
+                                        alt="Card image cap">
                                 </div>
                             </div>
                             <div class="col">
