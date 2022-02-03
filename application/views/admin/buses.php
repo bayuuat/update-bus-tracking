@@ -20,52 +20,55 @@
                     <?= $this->session->flashdata('message-bus'); ?>
                 </div>
                 <?php if (empty($list)) { ?>
-                    <div class="alert alert-danger" role="alert">
-                        Data not found!
-                    </div>
+                <div class="alert alert-danger" role="alert">
+                    Data not found!
+                </div>
                 <?php } else { ?>
-                    <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Image</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Image</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <?php $i = 1;
+                <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <?php $i = 1;
                             foreach ($list as $l) :
                             ?>
-                                <tr>
-                                    <th scope="row"><?= $i; ?></th>
-                                    <td><img src="<?= base_url(); ?>assets/img/<?= $l['image']; ?>" alt="" style="width: 150px" class="img-thumbnail"></td>
-                                    <td><?= $l['name']; ?></td>
-                                    <td><?= $l['description']; ?></td>
+                        <tr>
+                            <th scope="row"><?= $i; ?></th>
+                            <td><img src="<?= base_url(); ?>assets/img/<?= $l['image']; ?>" alt="" style="width: 150px"
+                                    class="img-thumbnail"></td>
+                            <td><?= $l['name']; ?></td>
+                            <td><?= $l['description']; ?></td>
 
-                                    <td>
-                                        <a href=" <?= base_url('admin/edit/') . $l['id']; ?>" class="btn btn-info tombolEditBus" data-id="<?= $l['id']; ?>" data-toggle="modal" data-target="#UserEdit">
-                                            <i class="fas fa-pencil-alt"></i>
-                                        </a>
-                                        <a href="<?= base_url('admin/delete/') . $l['id']; ?>" onclick="return confirm('Yakin?');" class="btn btn-danger">
-                                            <i class="fas fa-trash "></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            <?php $i++;
+                            <td>
+                                <a href=" <?= base_url('admin/edit/') . $l['id']; ?>" class="btn btn-info tombolEditBus"
+                                    data-id="<?= $l['id']; ?>" data-toggle="modal" data-target="#UserEdit">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <a href="<?= base_url('admin/delete/') . $l['id']; ?>"
+                                    onclick="return confirm('Yakin?');" class="btn btn-danger">
+                                    <i class="fas fa-trash "></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <?php $i++;
                             endforeach; ?>
-                        </tbody>
-                    </table>
+                    </tbody>
+                </table>
                 <?php } ?>
             </div>
         </div>
@@ -86,7 +89,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <?php echo form_open_multipart('admin'); ?>
+            <?php echo form_open_multipart('admin/buses'); ?>
             <div class="modal-body">
                 <div class="form-group">
                     <label for="name">Nama Bus</label>
