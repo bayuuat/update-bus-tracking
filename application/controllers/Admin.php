@@ -158,6 +158,7 @@ class Admin extends CI_Controller
         $this->form_validation->set_rules('latitude', 'Latitude', 'required');
         $this->form_validation->set_rules('longitude', 'Longitude', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required');
+        
 
         if ($this->form_validation->run() == false) {
             $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
@@ -182,11 +183,11 @@ class Admin extends CI_Controller
                     $up_image = $this->upload->data('file_name');
                 } else {
                     $this->session->set_flashdata('message-bus', '<div class="alert alert-danger" role="alert">' . $this->upload->display_errors() . '</div>');
-                    redirect(base_url('admin'));
+                    redirect(base_url('admin/station'));
                 }
             } else {
                 $this->session->set_flashdata('message-bus', '<div class="alert alert-danger" role="alert">
-                Upload gambar bus!
+                Upload gambar charging station!
                 </div>');
                 redirect(base_url('admin/station'));
             }
@@ -200,9 +201,8 @@ class Admin extends CI_Controller
                 'foto' => $up_image,
             ];
             $this->M_admin->create('tempat_charge', $data_station);
-            
             $this->session->set_flashdata('message-bus', '<div class="alert alert-success" role="alert">
-        New Charging Station added!
+        New Bus added!
         </div>');
             redirect(base_url('admin/station'));
         }
@@ -243,20 +243,26 @@ class Admin extends CI_Controller
             }
         } else {
             $data = [
-                'nama' => $this->input->post('nama', true),
-                'lokasi' => $this->input->post('lokasi', true),
-                'latitude' => $this->input->post('latitude', true),
-                'longitude' => $this->input->post('longitude', true),
-                'status' => $this->input->post('status', true)
+                "nama" => $this->input->post('nama', true),
+                "lokasi" => $this->input->post('lokasi', true),
+                "latitude" => $this->input->post('latitude', true),
+                "longitude" => $this->input->post('longitude', true),
+                "status" => $this->input->post('status', true)
             ];
         }
 
         $this->db->where('id', $this->input->post('id'));
         $this->db->update('tempat_charge', $data);
         $this->session->set_flashdata('message-bus', '<div class="alert alert-success" role="alert">
-        Charging Station data has been edited!
+        Bus data has been edited!
         </div>');
         redirect(base_url('admin/station'));
     }
+    
+    public function getubah_station()
+    {
+        echo json_encode($this->db->get_where('tempat_charge', ['id' => $this->input->post('id')])->row_array());
+    }
+
     //---------------------CRUD CHARGING STATION---------------------//
 }

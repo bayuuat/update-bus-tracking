@@ -27,10 +27,11 @@
                 <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
+                            <th scope="col">No</th>
                             <th scope="col">Image</th>
                             <th scope="col">Name</th>
                             <th scope="col">Location</th>
+                            <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -44,10 +45,12 @@
                                     class="img-thumbnail"></td>
                             <td><?= $l['nama']; ?></td>
                             <td><?= $l['lokasi']; ?></td>
+                            <td><?= $l['status']; ?></td>
 
                             <td>
-                                <a href=" <?= base_url('admin/edit/') . $l['id']; ?>" class="btn btn-info tombolEditBus"
-                                    data-id="<?= $l['id']; ?>" data-toggle="modal" data-target="#UserEdit">
+                                <a href=" <?= base_url('admin/edit_station/') . $l['id']; ?>"
+                                    class="btn btn-info tombolEditStation" data-id="<?= $l['id']; ?>"
+                                    data-toggle="modal" data-target="#UserEdit">
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
                                 <a href="<?= base_url('admin/delete_station/') . $l['id']; ?>"
@@ -83,38 +86,39 @@
             <?php echo form_open_multipart('admin/station'); ?>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>Nama Charging Station</label>
-                    <input type="text" class="form-control" name="nama" id="nama">
+                    <label for="nama">Nama Charging Station</label>
+                    <input type="text" class="form-control" name="nama">
                     <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
-                    <label>Lokasi</label>
-                    <input type="text" class="form-control" name="lokasi" id="lokasi">
+                    <label for="lokasi">Lokasi</label>
+                    <input type="text" class="form-control" name="lokasi">
                     <?= form_error('lokasi', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
-                    <label for="file">Image</label>
-                    <input type="file" class="form-control-file" name="image" size="20">
-                    <?= form_error('image', '<small class="text-danger pl-3">', '</small>'); ?>
-                </div>
-                <div class="form-group">
-                    <label>Latitude</label>
-                    <input type="text" class="form-control" name="latitude" id="latitude">
-                    <?= form_error('latitude', '<small class="text-danger pl-3">', '</small>'); ?>
-                </div>
-                <div class="form-group">
-                    <label>Longitude</label>
-                    <input type="text" class="form-control" name="longitude" id="longitude">
+                    <label for="longitude">Longitude</label>
+                    <input type="text" class="form-control" name="longitude">
                     <?= form_error('longitude', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
+                    <label for="latitude">Latitude</label>
+                    <input type="text" class="form-control" name="latitude">
+                    <?= form_error('latitude', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group">
                     <label>Status</label>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select name="status" class="custom-select">
                         <option selected>Choose...</option>
                         <option value="Available">Available</option>
                         <option value="Occupied">Occupied</option>
                         <option value="Unavailable">Unavailable</option>
                     </select>
+                    <?= form_error('status', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group">
+                    <label for="file">Image</label>
+                    <input type="file" class="form-control-file" name="image" size="20">
+                    <?= form_error('image', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
             </div>
             <div class="modal-footer">
@@ -144,34 +148,39 @@
                         <input class="form-control" type="text" name="id" id="id" readonly>
                     </div>
                     <div class="form-group">
-                        <label>Nama Charging Station</label>
-                        <input type="text" class="form-control" name="nama" id="nama">
+                        <label for="nama">Nama Charging Station</label>
+                        <input type="text" class="form-control" id="editNama" name="nama">
                         <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                     <div class="form-group">
-                        <label>Lokasi</label>
-                        <input type="text" class="form-control" name="lokasi" id="lokasi">
+                        <label for="lokasi">Lokasi</label>
+                        <input type="text" class="form-control" id="editLokasi" name="lokasi">
                         <?= form_error('lokasi', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                     <div class="form-group">
-                        <label for="file">Image</label>
-                        <input type="file" class="form-control-file" name="image" size="20">
-                        <?= form_error('image', '<small class="text-danger pl-3">', '</small>'); ?>
-                    </div>
-                    <div class="form-group">
-                        <label>Latitude</label>
-                        <input type="text" class="form-control" name="latitude" id="latitude">
-                        <?= form_error('latitude', '<small class="text-danger pl-3">', '</small>'); ?>
-                    </div>
-                    <div class="form-group">
-                        <label>Longitude</label>
-                        <input type="text" class="form-control" name="longitude" id="longitude">
+                        <label for="lokasi">Longitude</label>
+                        <input type="text" class="form-control" id="editLongitude" name="longitude">
                         <?= form_error('longitude', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                     <div class="form-group">
-                        <label>Status</label>
-                        <input type="text" class="form-control" name="status" id="status">
+                        <label for="lokasi">Latitude</label>
+                        <input type="text" class="form-control" id="editLatitude" name="latitude">
+                        <?= form_error('latitude', '<small class="text-danger pl-3">', '</small>'); ?>
+                    </div>
+                    <div class="form-group">
+                        <label for="lokasi">Status</label>
+                        <select id="editStatus" name="status" class="custom-select">
+                            <option value="Available">Available</option>
+                            <option value="Occupied">Occupied</option>
+                            <option value="Unavailable">Unavailable</option>
+                        </select>
                         <?= form_error('status', '<small class="text-danger pl-3">', '</small>'); ?>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Image (Klik pilih gambar jika ingin mengganti gambar)</label>
+                        <img id="image" src="" alt="" style="width: 150px" class="img-thumbnail mb-3">
+                        <input type="file" class="form-control-file" name="image" size="20">
+                        <?= form_error('foto', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="modal-footer">

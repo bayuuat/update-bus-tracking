@@ -93,7 +93,7 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="name">Nama Bus</label>
-                    <input type="text" class="form-control" name="name" id="name">
+                    <input type="text" class="form-control" name="name">
                     <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
