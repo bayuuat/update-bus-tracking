@@ -108,6 +108,10 @@
   font-size: 16px;
 }
 
+.booking .flash-message {
+  background: #1cc88a;
+}
+
 .booking-detail {
   /* Wrapper around the hour, minute, second, and am/pm fields as well as 
 	  the up and down buttons and the 'X' button */
@@ -366,6 +370,10 @@
   vertical-align: middle;
 }
 
+.booking-detail input[type="time"]:focus-visible {
+  outline: none;
+}
+
 .booking-detail input[type="time"]::-webkit-datetime-edit-fields-wrapper {
   height: 24px;
   display: -webkit-box;
@@ -380,18 +388,19 @@
   background-color: #f1f6ff;
   border-radius: 15%;
   padding: 0 13px;
+  color: #6e7689;
 }
 
 .booking-detail input[type="time"]::-webkit-datetime-edit-minute-field {
   background-color: #f1f6ff;
   border-radius: 15%;
   padding: 0 13px;
+  color: #6e7689;
 }
 
 .booking-detail input[type="time"]::-webkit-datetime-edit-ampm-field {
   background-color: #7155d3;
   border-radius: 15%;
-  color: #fff;
   padding: 19px 13px;
 }
 
