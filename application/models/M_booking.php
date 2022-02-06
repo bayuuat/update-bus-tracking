@@ -3,6 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class M_booking extends CI_Model
 {
+  public function create($table, $data)
+  {
+    $query = $this->db->insert($table, $data);
+    return $this->db->insert_id(); // return last insert id
+  }
+    
   public function get_data()
   {
     return $this->db->get('tempat_charge')->result_array();

@@ -1,4 +1,7 @@
 <div class="booking container-fluid">
+    <div class="flash-message">
+        <?= $this->session->tempdata('success_booking') ?>
+    </div>
     <div class="row pl-4">
         <div class="timeline card shadow-sm col-2 mt-3" style="max-height: 85vh;">
             <div class="justify-content">

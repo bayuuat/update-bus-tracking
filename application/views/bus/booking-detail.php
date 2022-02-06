@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                    <form action="">
+                    <form action="<?php echo base_url('bookings/create/') . $detail->id ?>" method="POST">
                         <div class="books-detail row my-4">
                             <div class="col-9">
                                 <div class="tombol-buatan row my-3">
@@ -76,32 +76,31 @@
                                 <div class="tombol-buatan row my-3">
                                     <div class="col d-flex">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input type="date" class="datepicker-input">
+                                        <input name="tanggal" type="date" class="datepicker-input">
                                     </div>
                                 </div>
                                 <div class="tombol-buatan row my-3 py-2">
                                     <div class="col d-flex">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input class="my-auto" type="time" value="13:30" />
+                                        <input name="jam_mulai" class="my-auto" type="time" />
                                     </div>
                                     <div class="my-auto col-2 d-flex garis p-0">
                                         <p>&#124;</p>
                                     </div>
                                     <div class="col d-flex justify-content-end">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input class="my-auto" type="time" value="13:30" />
+                                        <input name="jam_selesai" class="my-auto" type="time" />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 align-items-end d-flex">
                                 <div class="row my-3">
-                                    <button class="btn btn-book my-auto">
+                                    <button class="btn btn-book my-auto" type="submit">
                                         BOOK NOW
                                     </button>
                                 </div>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>

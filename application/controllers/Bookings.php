@@ -11,6 +11,8 @@ class Bookings extends CI_Controller
         } elseif ($this->session->userdata('role_id') != 1) {
             redirect(base_url('home'));
         };
+        $this->load->model('M_booking');
+        $this->load->library('session');
     }
     public function index()
     {
@@ -35,5 +37,25 @@ class Bookings extends CI_Controller
         $data['detail'] = $detail;
         $this->load->view('templates/header', $data);
         $this->load->view('bus/booking-detail', $data);
+    }
+
+    public function create($id_station)
+    {
+        $this->form_validation->set_rules('tanggal', 'Tanggal', 'required');
+        $this->form_validation->set_rules('jam_mulai', 'Jam_mulai', 'required');
+        $this->form_validation->set_rules('jam_selesai', 'Jam_selesai', 'required');
+
+        $id_bus = $this->session->userdata('id');
+
+        $data_booking = [
+            'id_bus' => $id_bus,
+            'id_station' => $id_station,
+            'tanggal' => $this->input->post('tanggal'),
+            'jam_mulai' => $this->input->post('jam_mulai'),
+            'jam_selesai' => $this->input->post('jam_selesai')
+        ];
+        $this->M_booking->create('bookings', $data_booking);
+        $this->session->set_tempdata('success_booking', 'Data berhasil ditambahkan', 2);
+        redirect(base_url('bookings'));
     }
 }
