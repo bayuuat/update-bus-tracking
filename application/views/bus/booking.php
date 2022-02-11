@@ -1,7 +1,25 @@
 <div class="booking container-fluid">
-    <div class="flash-message">
-        <?= $this->session->tempdata('success_booking') ?>
+    <div class="modal fade <?=$abc?>" id="UserEdit" tabindex="-1" role="dialog" aria-labelledby="UserEditLabel"
+        aria-modal="true" style="padding-right: 16px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="UserEditLabel">Edit Charging Station</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Woohoo, you're reading this text in a modal!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <?= $this->session->tempdata('success_booking') ?>
     <div class="row pl-4">
         <div class="timeline card shadow-sm col-2 mt-3" style="max-height: 85vh;">
             <div class="justify-content">

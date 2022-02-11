@@ -76,13 +76,13 @@
                                 <div class="tombol-buatan row my-3">
                                     <div class="col d-flex">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input name="tanggal" type="date" class="datepicker-input">
+                                        <input id="datefield" name="tanggal" type="date" class="datepicker-input">
                                     </div>
                                 </div>
                                 <div class="tombol-buatan row my-3 py-2">
                                     <div class="col d-flex">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input name="jam_mulai" class="my-auto" type="time" />
+                                        <input id="jam_mulai" name="jam_mulai" class="my-auto" type="time" />
                                     </div>
                                     <div class="my-auto col-2 d-flex garis p-0">
                                         <p>&#124;</p>
