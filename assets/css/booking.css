@@ -9,6 +9,7 @@
 
 .booking .timeline .booked-station i {
   text-align: right;
+  font-size: small;
 }
 
 .booking .timeline .booked-station h2 {
@@ -264,6 +265,7 @@
 
 .booking-detail .timeline .booked-station i {
   text-align: right;
+  font-size: small;
 }
 
 .booking-detail .timeline .booked-station h2 {

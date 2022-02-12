@@ -55,7 +55,7 @@
             </script>
             <?php endforeach; ?>
         </div>
-        <div class="col-3 side-data" style="height:88vh;">
+        <div class="col-3 side-data" style="height:90vh;">
             <div class="d-flex flex-column justify-content-around" style="height: 100%;">
                 <div class="card shadow">
                     <!-- Card Body -->
