@@ -151,6 +151,8 @@ class Admin extends CI_Controller
         redirect(base_url('admin/buses'));
     }
     //---------------------CRUD BUS---------------------//
+
+    //---------------------CRUD CHARGING STATION---------------------//
     public function station()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required');

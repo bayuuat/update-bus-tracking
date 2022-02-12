@@ -10,10 +10,16 @@
                 <h2>Charging Station Bookings</h2>
             </div>
             <div class="row">
-                <div class="timeline card col-3 mx-3">
+                <div class="timeline card shadow-sm col-3 mx-3" style="max-height: 76.6vh;">
                     <div class="justify-content">
                         <p>Your Booked Station</p>
                         <hr>
+                        <div class="card booked-station my-3">
+                            <i class="fa fa-times"></i>
+                            <h2>FTEIC Charging Station</h2>
+                            <p>Monday, 31 January 2022</p>
+                            <p class="p-0">12:00 - 13:00</p>
+                        </div>
                     </div>
                 </div>
                 <div class="main-content col px-4">

@@ -2,6 +2,25 @@
   background: #fdfbfb;
 }
 
+.booking .timeline .booked-station {
+  background: #e0f8ef;
+  padding: 10px;
+}
+
+.booking .timeline .booked-station i {
+  text-align: right;
+}
+
+.booking .timeline .booked-station h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+  color: #4e73df;
+}
+
 .booking .timeline p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -236,6 +255,25 @@
   height: 46px;
   border-radius: 50%;
   background-color: #f1f6ff;
+}
+
+.booking-detail .timeline .booked-station {
+  background: #e0f8ef;
+  padding: 10px;
+}
+
+.booking-detail .timeline .booked-station i {
+  text-align: right;
+}
+
+.booking-detail .timeline .booked-station h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+  color: #4e73df;
 }
 
 .booking-detail .timeline p {
