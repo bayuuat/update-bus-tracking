@@ -27,8 +27,7 @@
                         <div class="row">
                             <div class="col-auto">
                                 <div class="img-square-wrapper my-auto">
-                                    <img class="" src="<?= base_url("assets/img/") . $detail->foto ?>"
-                                        alt="Card image cap">
+                                    <img class="" src="<?= base_url("assets/img/") . $detail->foto ?>" alt="Card image cap">
                                 </div>
                             </div>
                             <div class="col">
@@ -51,15 +50,15 @@
                                             <p id="WarnaStatus" class="status-station"><?= $detail->status ?>
                                             </p>
                                             <script>
-                                            var status = "<?php echo $detail->status; ?>";
-                                            var element = document.getElementById("WarnaStatus");
-                                            if (status == 'Available') {
-                                                element.classList.add('text-success');
-                                            } else if (status == 'Occupied') {
-                                                element.classList.add('text-danger');
-                                            } else if (status == 'Unavailable') {
-                                                element.classList.add('text-secondary');
-                                            }
+                                                var status = "<?php echo $detail->status; ?>";
+                                                var element = document.getElementById("WarnaStatus");
+                                                if (status == 'Available') {
+                                                    element.classList.add('text-success');
+                                                } else if (status == 'Occupied') {
+                                                    element.classList.add('text-danger');
+                                                } else if (status == 'Unavailable') {
+                                                    element.classList.add('text-secondary');
+                                                }
                                             </script>
                                         </div>
                                     </div>
@@ -88,14 +87,14 @@
                                 <div class="tombol-buatan row my-3 py-2">
                                     <div class="col d-flex">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input id="jam_mulai" name="jam_mulai" class="my-auto" type="time" />
+                                        <select name="jam_mulai" id="selectHourstr"></select>
                                     </div>
                                     <div class="my-auto col-2 d-flex garis p-0">
                                         <p>&#124;</p>
                                     </div>
                                     <div class="col d-flex justify-content-end">
                                         <i class="fas fa-charging-station my-auto"></i>
-                                        <input name="jam_selesai" class="my-auto" type="time" />
+                                        <select name="jam_selesai" id="selectHourend"></select>
                                     </div>
                                 </div>
                             </div>

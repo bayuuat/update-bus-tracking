@@ -1,5 +1,4 @@
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -19,7 +18,7 @@
 
 <!-- Optional JavaScript; choose one of the two! -->
 <script>
-const base = '<?= base_url(); ?>';
+    const base = '<?= base_url(); ?>';
 </script>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -39,59 +38,60 @@ const base = '<?= base_url(); ?>';
 <script src="<?= base_url(); ?>assets/js/script.js"></script>
 
 <script src="<?= base_url(); ?>assets/js/sb-admin-2.min.js?"></script>
+<script src="<?= base_url(); ?>assets/js/booking.js"></script>
 
 <script>
-const list = $(".nav-link.text-white");
-const title = $("title").html();
-for (let i = 0; i < list.length; i++) {
-    if (list[i].innerHTML == title) {
-        list[i].classList.add("active");
-    }
-}
-
-$('.custom-file-input').on('change', function() {
-    let fileName = $(this).val().split('\\').pop();
-    $(this).next('.custom-file-label').addClass("selected").html(fileName);
-});
-
-$(".tableLog").DataTable({
-    processing: true,
-    serverSide: true,
-    order: [],
-    ajax: {
-        "url": '<?= base_url('home/getDataLog') ?>',
-        "method": "POST"
-    },
-    colums: [{
-            "data": "id",
-            "width": 150
-        },
-        {
-            "data": "id_bus",
-            "width": 150
-        },
-        {
-            "data": "speed",
-            "width": 150
-        },
-        {
-            "data": "heading",
-            "width": 150
-        },
-        {
-            "data": "time",
-            "width": 150
-        },
-        {
-            "data": "latitude",
-            "width": 150
-        },
-        {
-            "data": "longitude",
-            "width": 150
+    const list = $(".nav-link.text-white");
+    const title = $("title").html();
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].innerHTML == title) {
+            list[i].classList.add("active");
         }
-    ]
-});
+    }
+
+    $('.custom-file-input').on('change', function() {
+        let fileName = $(this).val().split('\\').pop();
+        $(this).next('.custom-file-label').addClass("selected").html(fileName);
+    });
+
+    $(".tableLog").DataTable({
+        processing: true,
+        serverSide: true,
+        order: [],
+        ajax: {
+            "url": '<?= base_url('home/getDataLog') ?>',
+            "method": "POST"
+        },
+        colums: [{
+                "data": "id",
+                "width": 150
+            },
+            {
+                "data": "id_bus",
+                "width": 150
+            },
+            {
+                "data": "speed",
+                "width": 150
+            },
+            {
+                "data": "heading",
+                "width": 150
+            },
+            {
+                "data": "time",
+                "width": 150
+            },
+            {
+                "data": "latitude",
+                "width": 150
+            },
+            {
+                "data": "longitude",
+                "width": 150
+            }
+        ]
+    });
 </script>
 
 </body>

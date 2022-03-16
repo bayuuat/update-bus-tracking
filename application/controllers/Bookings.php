@@ -47,9 +47,9 @@ class Bookings extends CI_Controller
         $this->form_validation->set_rules('tanggal', 'Tanggal', 'required');
         $this->form_validation->set_rules('jam_mulai', 'Jam_mulai', 'required');
         $this->form_validation->set_rules('jam_selesai', 'Jam_selesai', 'required');
-        
+
         $id_bus = $this->session->userdata('id');
-        if ($this->form_validation->run()){
+        if ($this->form_validation->run()) {
             $data_booking = [
                 'id_bus' => $id_bus,
                 'id_station' => $id_station,
@@ -65,8 +65,7 @@ class Bookings extends CI_Controller
             </button>
             </div>', 2);
             $abc = 'show';
-        }
-        else {
+        } else {
             $this->session->set_tempdata('success_booking', '<div class="mt-3 alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Incomplete data entered</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -74,7 +73,15 @@ class Bookings extends CI_Controller
             </button>
             </div>', 2);
         }
-        
+
         redirect(base_url('bookings'));
+    }
+
+    public function getDataBook($tanggal)
+    {
+        $query = "SELECT * FROM bookings WHERE tanggal = '$tanggal'";
+        $data = $this->db->query($query)->result_array();
+
+        echo json_encode($data);
     }
 }
